@@ -1,6 +1,6 @@
-html, body {
+/*html, body {
   height: 100%;
-}
+}*/
 
 body {
   font-size: 16px;
@@ -11,7 +11,7 @@ body header {
   color: white;
   height: 400px;
   text-align: center;
-  background: url("/img/develop.jpg");
+  background: url("../img/develop.jpg");
   background-size: cover;
   background-position: center center;
   padding: 2em 0 6em;
@@ -258,7 +258,7 @@ body > nav > ul > li > a:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    border: 1px solid blue;
+    border: 2px solid blue;
   }
   body nav ul {
     display: block;
@@ -267,11 +267,44 @@ body > nav > ul > li > a:hover {
     display: none;
   }
 	section.sobre-mi{
-		
+		font-size: 0;
 	}
 	
 	section.sobre-mi article{
 		width: 50%;
 		display: inline-block;
+		vertical-align: top;
+		font-size: 16px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	section.habilidades{
+		font-size: 0px;
+	}
+	
+	section.habilidades div.item{
+		width: 25%;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	
+	section.habilidades h2{
+		font-size: 20px;
+		padding-top: 20px;
+	}
+	
+	section.habilidades > p{
+		font-size: 14px;
+	}
+	
+	footer{
+		
+	}
+	
+	footer > div, footer > form{
+		
 	}
 }
