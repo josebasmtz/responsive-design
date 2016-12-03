@@ -1,0 +1,277 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Slabo 27px', 'serif';
+}
+
+body header {
+  color: white;
+  height: 400px;
+  text-align: center;
+  background: url("/img/develop.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 2em 0 6em;
+  position: relative;
+  z-index: 0;
+}
+
+body header img.img-circle {
+  width: 100px;
+  border: 2px dashed lightgrey;
+  border-radius: 50px;
+  margin-top: 5em;
+}
+
+body header h1 {
+  font-size: 1.5em;
+}
+
+body header p {
+  font-size: 1.3em;
+}
+
+body header a {
+  display: inline-block;
+  padding: 10px 30px;
+  background: rgba(58, 44, 23, 0.47);
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.7s ease;
+}
+
+body header a:hover {
+  background-color: white;
+  color: blue;
+  transition: all 0.7s ease;
+}
+
+body header:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 255, 0.54);
+  z-index: 0;
+}
+
+body header div.data {
+  position: relative;
+  z-index: 1;
+}
+
+body nav {
+  background: black;
+  overflow: hidden;
+}
+
+body > nav > a.menu {
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  float: right;
+}
+
+body section.sobre-mi {
+  padding: 1.5em;
+}
+
+body section.sobre-mi article:first-child {
+  text-align: center;
+}
+
+body section.sobre-mi article:first-child h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+body section.sobre-mi article:first-child img {
+  max-width: 300px;
+  min-width: 100px;
+  width: 50%;
+  box-shadow: 0 0 10px #b7b7b7;
+  filter: grayscale(100%);
+  transition: all 0.7s ease;
+}
+
+body section.sobre-mi article:first-child img:hover {
+  filter: grayscale(10%);
+  transition: all 0.7s ease;
+}
+
+body section.sobre-mi article:last-child h2 {
+  text-transform: capitalize;
+}
+
+body section.sobre-mi article:last-child ul {
+  padding: 0px;
+  list-style: none;
+}
+
+body section.sobre-mi article:last-child ul li {
+  font-style: .85em;
+  margin-bottom: .85em;
+  color: #949494;
+}
+
+body section.sobre-mi article:last-child ul li i {
+  margin-right: .66em;
+  color: blue;
+  font-size: 1.25em;
+}
+
+body section.habilidades {
+  text-align: center;
+  background: blue;
+  color: white;
+  padding: 2em;
+}
+
+body section.habilidades h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+body section.habilidades div.item {
+  padding: 1em;
+}
+
+body section.habilidades div.item a {
+  font-size: 2.5em;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: .5em .6em;
+  display: inline-block;
+}
+
+body > footer {
+  padding: 2em;
+  background: #0A1525;
+  color: white;
+  padding-bottom: 0px;
+}
+
+body > footer h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+body > footer div ul {
+  list-style: none;
+  padding: 0px;
+}
+
+body > footer div ul li {
+  display: inline-block;
+}
+
+body > footer div ul li a {
+  display: block;
+  font-size: 1.7em;
+  padding: 5px 20px;
+  color: white;
+}
+
+body > footer > div > ul > li:nth-child(1) a:hover {
+  color: #55acee;
+}
+
+body > footer > div > ul > li:nth-child(2) a:hover {
+  color: #3b5998;
+}
+
+body > footer > div > ul > li:nth-child(3) a:hover {
+  color: #cb2026;
+}
+
+body > footer > div > ul > li:nth-child(4) a:hover {
+  color: #dd4b39;
+}
+
+body > footer > form input, body > footer > form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  background-color: transparent;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  resize: none;
+  border-width: 1px;
+  color: white;
+}
+
+body > footer > form button {
+  background: #0000ff;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+body > footer > p {
+  text-align: center;
+  padding: 2em 0;
+  border-top: 1px solid white;
+  margin: 0px;
+}
+
+body > footer > p > a {
+  color: cyan;
+  text-decoration: none;
+}
+
+body > nav > ul {
+  /*display: none;*/
+  margin: 0px;
+  padding: 0;
+  text-align: center;
+  display: none;
+}
+
+body > nav > ul > li {
+  display: inline-block;
+}
+
+body > nav > ul > li > a {
+  color: #b7b7b7;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+body > nav > ul > li > a:hover {
+  color: black;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    border: 1px solid blue;
+  }
+  body nav ul {
+    display: block;
+  }
+  body nav a.menu {
+    display: none;
+  }
+	section.sobre-mi{
+		
+	}
+	
+	section.sobre-mi article{
+		width: 50%;
+		display: inline-block;
+	}
+}
